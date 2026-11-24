@@ -1,0 +1,25 @@
+
+# Environnement virtuel
+.venv/
+venv/
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Sauvegardes
+sauvegarde_v1/
+
+# Configuration personnelle
+.env
+
+# Documents et fichiers de démonstration
+*.pdf
+*.mp4
+*.MOV
+
+# Fichiers système
+.DS_Store
+Thumbs.db

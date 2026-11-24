@@ -1,0 +1,17 @@
+test_conflicting_locations (test_improvements.ImprovementTests.test_conflicting_locations) ... ok
+test_french_conclusion (test_improvements.ImprovementTests.test_french_conclusion) ... ok
+test_invalid_fact (test_improvements.ImprovementTests.test_invalid_fact) ... ok
+test_negative (test_improvements.ImprovementTests.test_negative) ... ok
+test_question_priority (test_improvements.ImprovementTests.test_question_priority) ... ok
+test_voice_aliases (test_improvements.ImprovementTests.test_voice_aliases) ... ok
+test_alternative (test_lab.LabTests.test_alternative) ... ok
+test_demo (test_lab.LabTests.test_demo) ... ok
+test_hours (test_lab.LabTests.test_hours) ... ok
+test_invalid (test_lab.LabTests.test_invalid) ... ok
+test_multiple (test_lab.LabTests.test_multiple) ... ok
+test_question (test_lab.LabTests.test_question) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.129s
+
+OK

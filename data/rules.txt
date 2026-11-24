@@ -1,0 +1,7 @@
+# Règles de Horn : variables minuscules, constantes majuscules.
+Presence(p,r,h) & ArmePresente(a,r,h) ==> Acces(p,a,r,h)
+Acces(p,a,r,h) & Scene(r) & HeureCrime(h) ==> Occasion(p,a,r,h)
+Occasion(p,a,r,h) & Compatible(a) ==> Suspect(p,a,r,h)
+Trace(p,a) & Temoin(p,r,h) ==> IndicesConcordants(p,a,r,h)
+Suspect(p,a,r,h) & IndicesConcordants(p,a,r,h) & Mobile(p) & SansAlibi(p,h) ==> Coupable(p,a,r,h)
+Alibi(p,h) & HeureCrime(h) ==> Disculpe(p,h)

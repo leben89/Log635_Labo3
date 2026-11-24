@@ -1,0 +1,63 @@
+% start S
+S[SEM=<Presence(?p,?r,?h)>] -> Person[SEM=?p] Verb PP[SEM=?r] Time[SEM=?h]
+S[SEM=<ArmePresente(?a,?r,?h)>] -> Det Weapon[SEM=?a] Verb PP[SEM=?r] Time[SEM=?h]
+S[SEM=<Scene(?r)>] -> Victime 'a' 'été' 'trouvé' PP[SEM=?r]
+S[SEM=<HeureCrime(?h)>] -> Victime 'est' 'mort' Time[SEM=?h]
+S[SEM=<Compatible(?a)>] -> 'le' 'rapport' 'désigne' Det Weapon[SEM=?a]
+S[SEM=<Trace(?p,?a)>] -> 'une' 'trace' 'de' Person[SEM=?p] 'est' 'sur' Det Weapon[SEM=?a]
+S[SEM=<Mobile(?p)>] -> Person[SEM=?p] 'avait' 'un' 'mobile'
+S[SEM=<Alibi(?p,?h)>] -> Person[SEM=?p] 'avait' 'un' 'alibi' Time[SEM=?h]
+S[SEM=<SansAlibi(?p,?h)>] -> Person[SEM=?p] 'n' 'avait' 'pas' 'd' 'alibi' Time[SEM=?h]
+S[SEM=<Temoin(?p,?r,?h)>] -> 'un' 'témoin' 'a' 'vu' Person[SEM=?p] PP[SEM=?r] Time[SEM=?h]
+S[SEM=<Oui>] -> 'oui'
+S[SEM=<Non>] -> 'non'
+Person[SEM=?p] -> Name[SEM=?p] | Title Name[SEM=?p]
+Title -> 'colonel' | 'madame' | 'professeur' | 'docteur' | 'mademoiselle'
+Victime -> 'monsieur' 'black'
+Verb -> 'était' | 'est' | 'se' 'trouvait'
+PP[SEM=?r] -> 'dans' Det Room[SEM=?r]
+Time[SEM=?h] -> 'à' Hour[SEM=?h]
+Det -> 'le' | 'la' | 'un' | 'une'
+
+Name[SEM=<Moutarde>] -> 'moutarde'
+Name[SEM=<Rose>] -> 'rose'
+Name[SEM=<Violet>] -> 'violet'
+Name[SEM=<Pervenche>] -> 'pervenche'
+Name[SEM=<Olive>] -> 'olive'
+Name[SEM=<Leblanc>] -> 'leblanc'
+Room[SEM=<Cuisine>] -> 'cuisine'
+Room[SEM=<Salon>] -> 'salon'
+Room[SEM=<Bureau>] -> 'bureau'
+Room[SEM=<Bibliotheque>] -> 'bibliothèque'
+Room[SEM=<Hall>] -> 'hall'
+Room[SEM=<Cave>] -> 'cave'
+Weapon[SEM=<Corde>] -> 'corde'
+Weapon[SEM=<Poignard>] -> 'poignard'
+Weapon[SEM=<Revolver>] -> 'revolver'
+Weapon[SEM=<Chandelier>] -> 'chandelier'
+Weapon[SEM=<Matraque>] -> 'matraque'
+Weapon[SEM=<CleAnglaise>] -> 'clé' 'anglaise'
+Hour[SEM=<Heure0>] -> '0h'
+Hour[SEM=<Heure1>] -> '1h'
+Hour[SEM=<Heure2>] -> '2h'
+Hour[SEM=<Heure3>] -> '3h'
+Hour[SEM=<Heure4>] -> '4h'
+Hour[SEM=<Heure5>] -> '5h'
+Hour[SEM=<Heure6>] -> '6h'
+Hour[SEM=<Heure7>] -> '7h'
+Hour[SEM=<Heure8>] -> '8h'
+Hour[SEM=<Heure9>] -> '9h'
+Hour[SEM=<Heure10>] -> '10h'
+Hour[SEM=<Heure11>] -> '11h'
+Hour[SEM=<Heure12>] -> '12h'
+Hour[SEM=<Heure13>] -> '13h'
+Hour[SEM=<Heure14>] -> '14h'
+Hour[SEM=<Heure15>] -> '15h'
+Hour[SEM=<Heure16>] -> '16h'
+Hour[SEM=<Heure17>] -> '17h'
+Hour[SEM=<Heure18>] -> '18h'
+Hour[SEM=<Heure19>] -> '19h'
+Hour[SEM=<Heure20>] -> '20h'
+Hour[SEM=<Heure21>] -> '21h'
+Hour[SEM=<Heure22>] -> '22h'
+Hour[SEM=<Heure23>] -> '23h'

@@ -1,0 +1,11 @@
+test_alternative (test_lab.LabTests.test_alternative) ... ok
+test_demo (test_lab.LabTests.test_demo) ... ok
+test_hours (test_lab.LabTests.test_hours) ... ok
+test_invalid (test_lab.LabTests.test_invalid) ... ok
+test_multiple (test_lab.LabTests.test_multiple) ... ok
+test_question (test_lab.LabTests.test_question) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.088s
+
+OK

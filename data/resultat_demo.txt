@@ -1,0 +1,22 @@
+Rose était dans le salon à 21h. => Presence(Rose, Salon, Heure21)
+Violet était dans la bibliothèque à 21h. => Presence(Violet, Bibliotheque, Heure21)
+La corde était dans la bibliothèque à 21h. => ArmePresente(Corde, Bibliotheque, Heure21)
+Moutarde était dans la cuisine à 21h. => Presence(Moutarde, Cuisine, Heure21)
+Pervenche était dans le bureau à 21h. => Presence(Pervenche, Bureau, Heure21)
+Olive était dans le hall à 21h. => Presence(Olive, Hall, Heure21)
+Leblanc était dans la cave à 21h. => Presence(Leblanc, Cave, Heure21)
+Le poignard était dans la cuisine à 21h. => ArmePresente(Poignard, Cuisine, Heure21)
+Le revolver était dans le bureau à 21h. => ArmePresente(Revolver, Bureau, Heure21)
+Le chandelier était dans le salon à 21h. => ArmePresente(Chandelier, Salon, Heure21)
+La matraque était dans le hall à 21h. => ArmePresente(Matraque, Hall, Heure21)
+La clé anglaise était dans la cave à 21h. => ArmePresente(CleAnglaise, Cave, Heure21)
+Un témoin a vu Violet dans la bibliothèque à 21h. => Temoin(Violet, Bibliotheque, Heure21)
+Une trace de Violet est sur la corde. => Trace(Violet, Corde)
+Violet avait un mobile. => Mobile(Violet)
+Violet n'avait pas d'alibi à 21h. => SansAlibi(Violet, Heure21)
+Rose avait un alibi à 21h. => Alibi(Rose, Heure21)
+Acces(p,a,r,h) : [('Leblanc', 'CleAnglaise', 'Cave', 'Heure21'), ('Moutarde', 'Poignard', 'Cuisine', 'Heure21'), ('Olive', 'Matraque', 'Hall', 'Heure21'), ('Pervenche', 'Revolver', 'Bureau', 'Heure21'), ('Rose', 'Chandelier', 'Salon', 'Heure21'), ('Violet', 'Corde', 'Bibliotheque', 'Heure21')]
+Suspect(p,a,r,h) : [('Violet', 'Corde', 'Bibliotheque', 'Heure21')]
+Disculpe(p,h) : [('Rose', 'Heure21')]
+Coupable(p,a,r,h) : [('Violet', 'Corde', 'Bibliotheque', 'Heure21')]
+CONCLUSION : Violet a tué Monsieur Black dans la pièce Bibliotheque avec Corde à 21h (selon les règles du jeu).
